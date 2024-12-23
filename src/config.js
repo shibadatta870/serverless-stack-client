@@ -1,11 +1,11 @@
 const config = {
     s3: {
         REGION: "us-east-1",
-        BUCKET: "notes-app-uplodes",
+        BUCKET: "notes-api-uplodes",
     },
     apiGateway: {
         REGION: "us-east-1",
-        URL: "https://0vfq3ozzta.execute-api.us-east-1.amazonaws.com/prod",
+        URL: "https://1tahrkbr2j.execute-api.us-east-1.amazonaws.com/prod",
     },
     cognito: {
         REGION: "us-east-1",
