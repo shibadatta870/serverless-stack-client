@@ -1,9 +1,97 @@
-.Home .lander {
-    padding: 80px 0;
-    text-align: center;
+/* Overall page styling */
+.Home {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+    color: #fff;
+    font-family: "Arial", sans-serif;
+    padding: 20px;
 }
 
-.Home .lander h1 {
-    font-family: "Open Sans", sans-serif;
-    font-weight: 600;
+/* Lander styling */
+.lander {
+    text-align: center;
+    margin-top: 50px;
+    color: #fff;
+}
+
+.lander h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.lander p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Notes container */
+.notes {
+    width: 100%;
+    max-width: 800px;
+    background: #fff;
+    color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    margin-top: 30px;
+}
+
+.notes h2 {
+    font-size: 1.8rem;
+    border-bottom: 2px solid #6a11cb;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: #6a11cb;
+}
+
+/* List group items */
+.ListGroup .list-group-item {
+    border: none;
+    border-radius: 5px;
+    background: #f9f9f9;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ListGroup .list-group-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    background: #f1f1f1;
+}
+
+/* Icon and text styling for "Create a new note" */
+.ListGroup .list-group-item .font-weight-bold {
+    font-size: 1.1rem;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+/* Small text styling */
+.ListGroup .list-group-item .text-muted {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .lander h1 {
+        font-size: 2.5rem;
+    }
+
+    .lander p {
+        font-size: 1rem;
+    }
+
+    .notes {
+        padding: 15px;
+    }
 }

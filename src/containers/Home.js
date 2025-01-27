@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from "react";
 import ListGroup from "react-bootstrap/ListGroup";
 import { useAppContext } from "../libs/contextLib";
@@ -14,7 +15,6 @@ export default function Home() {
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
-        console.log("isAuthenticated:", isAuthenticated);
         async function onLoad() {
             if (!isAuthenticated) {
                 return;
@@ -30,13 +30,11 @@ export default function Home() {
         onLoad();
     }, [isAuthenticated]);
 
-
     function loadNotes() {
         return API.get("notes", "/notes");
     }
 
     function renderNotesList(notes) {
-        console.log("Notes to render:", notes);
         return (
             <>
                 <LinkContainer to="/notes/new">
@@ -62,12 +60,11 @@ export default function Home() {
         );
     }
 
-
     function renderLander() {
         return (
             <div className="lander">
                 <h1>Scratch</h1>
-                <p className="text-muted">A simple note taking app</p>
+                <p className="text-muted">A simple note-taking app</p>
             </div>
         );
     }

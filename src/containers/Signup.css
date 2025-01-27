@@ -7,3 +7,76 @@
     max-width: 320px;
     }
     }
+    /* Center and style the signup container */
+.Signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* background: linear-gradient(45deg, #6a11cb, #2575fc); */
+    font-family: "Arial", sans-serif;
+    padding: 20px;
+}
+
+/* Card styling */
+.signup-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Form title */
+.signup-card h1 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Custom form input styling */
+.form-control-custom {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1em;
+    margin-bottom: 15px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control-custom:focus {
+    border-color: #6a11cb;
+    box-shadow: 0 0 8px rgba(106, 17, 203, 0.3);
+}
+
+/* Signup button styling */
+.signup-button {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.signup-button:hover {
+    background: linear-gradient(to right, #2575fc, #6a11cb);
+    transform: scale(1.02);
+}
+
+.signup-button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .signup-card {
+        padding: 20px;
+    }
+}
